@@ -1,0 +1,783 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+}
+/* const  */
+.header-down{
+    /* background-color: white; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    position: fixed;
+    top: 31px;
+    width: 100%;
+    z-index: 22222222;
+}
+.logo{
+    /* float: left; */
+    padding-left: 80px;
+}
+.hamburger{
+    margin-right: 80px;
+    cursor: pointer;
+    padding: 15px;
+    border: 1px solid rgb(0, 0, 88);
+    border-radius: 50%;
+    transition: 0.7s;
+}
+.hamburger i{
+    color: rgb(0, 0, 88) ;
+    transition: 0.7s;
+    /* margin: auto; */
+}
+
+
+
+
+#caw{
+    width: 80%;
+    margin: auto;
+}
+.bg{
+    color: rgb(0, 0, 88) ;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    position: relative;
+}
+.prtcl1 , .prtcl2 , .prtcl3 , .prtcl4{
+    position: absolute;
+    left: 250px;
+    right: 250px;
+    top: 200px;
+    bottom: 50px;
+}
+.text-bg h1{
+    font-size: 150px;
+}
+/* ----------------------------chapter 1------------------------------------- */
+.chapter1{
+ /* background-color: rgb(250, 215, 236); */
+}
+/* .chapter1 .prtcl h1{
+    height: 100vh;
+} */
+.zirtoopi1{
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+.zirzirtoopi1{
+    margin-bottom: 70px;
+}
+.chapter1 h1{
+    color: rgb(0, 0, 88);
+    font-size: 55px;
+    text-align: center;
+}
+.chapter1 h4{
+    color: rgb(165, 165, 165);
+    font-size: 25px;
+    padding-left: 200px;
+}
+.chapter1 p{
+    color: rgb(0, 0, 88);
+    font-size: 40px;
+    padding-left: 200px;
+}
+.chapter1 .vis6{
+    width: 60%;
+}
+.slider{
+    /* overflow: hidden; */
+}
+.chapter1-con-slider{
+    padding: 10px 0;
+    /* background-color: bisque; */
+    padding-left: 200px;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 50px;
+    /* overflow: hidden; */
+    /* transform: rotate(-5deg); */
+}
+.chapter1-con-slider .box-slider{
+    background-color: azure;
+    padding: 50px 0;
+    margin-right: 20px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.248);
+    transition: 0.5s;
+}
+.chapter1-con-slider .title-slider{
+    display: block;
+    text-align: center;
+    align-items: flex-end;
+}
+.para2{
+    padding-left: 400px !important;
+    margin: 150px 0;
+    /* text-align: center; */
+}
+.slider-down{
+    display: flex;
+    justify-content: center;
+    margin: 150px 0;
+}
+.slider-down h5{
+    color: rgb(189, 189, 189);
+    font-size: 22px;
+    font-weight: 100;
+}
+.slider-down p{
+    font-size: 25px;
+    padding: 0 !important;
+}
+.sl-left {
+    border-right: 1px solid rgb(146, 146, 146);
+    padding-right: 100px;
+}
+.sl-left .input-form i{
+    background-color: #f8f3f0;
+    padding: 10px 20px;
+}
+.sl-left p{
+    color: #bd905b;
+}
+.sl-left input{
+    border: none;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f8f3f0;
+}
+.sl-right{
+    padding-left: 100px;
+}
+.sl-right button{
+    border-radius: 50px;
+    padding: 15px 25px;
+    border: 1px solid rgb(0, 0, 88);
+    color: rgb(0, 0, 88);
+    background-color: white;
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.sl-right button:hover{
+    background-color: rgb(0, 0, 88);
+    color: white;
+}
+.arr-sliders{
+    /* background-color: red; */
+    width: 100%;
+    height: 40px;
+    margin-top: -230px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.arr-sliders i{
+    margin: 0 80px;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(0, 0, 88);
+    cursor: pointer;
+    z-index: 99999999999;
+    /* position: absolute; */
+    /* transform: scaleX(1.5); */
+}
+.dotted{
+    display: flex;
+    justify-content: center;
+    z-index: 9999999999999999;
+    margin-top: 200px;
+}
+.noqte{
+    color: rgb(0, 0, 88);
+    font-size: 100px;
+    cursor: pointer;
+}
+.arrL-chap1{
+    /* font-size: 100px !important; */
+
+    /* left: 0; */
+    transition: 0.5s;
+    cursor: pointer !important;
+    visibility: hidden;
+    opacity: 0;
+}
+.arrL-chap1:hover{
+    transform: scale(1.2);
+}
+.arrR-chap1{
+    /* right: 0; */
+    transition: 0.5s;
+    cursor: pointer !important;
+    /* visibility: hidden;
+    opacity: 0; */
+}
+.arrR-chap1:hover{
+    transform: scale(1.2);
+}
+.chapter1-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    text-align: center;
+    background-color: #f8f3f0;
+    color: rgb(0, 0, 88);
+}
+.chapter1-footer h5{
+    color: rgb(192, 192, 192);
+    font-weight: 200;
+    font-size: 25px;
+}
+.chapter1-footer h2{
+    font-size: 60px;
+    transition: 0.5s;
+}
+.chapter1-footer h2:hover i{
+    transform: translate(50px);
+}
+.chapter1-footer h2 i:hover{
+    transform: translateX(50px);
+}
+.chapter1-footer hr{
+    margin: auto;
+    width: 30%;
+    color: rgb(255, 255, 255);
+}
+/* ----------------------------chapter 2------------------------------------- */
+.chapter2{
+    color: rgb(0, 0, 88);
+}
+hr{
+    width: 60%;
+    margin: 100px auto;
+}
+button{
+    border-radius: 50px;
+    padding: 15px 25px;
+    border: 1px solid rgb(0, 0, 88);
+    color: rgb(0, 0, 88);
+    background-color: white;
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+button:hover{
+    color: white;
+    background-color: rgb(0, 0, 88);
+}
+.chapter2 .title{
+    font-size: 55px;
+    text-align: center;
+}
+.chap2-sec1{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+.chap2-sec1 .no #no{
+    font-size: 80px;
+    font-weight: 500;
+}
+.chap2-sec1 .no span{
+    font-size: 45px;
+    font-weight: 200;
+}
+.chap2-sec1 .poeple #poeple{
+    font-size: 80px;
+    font-weight: 500;
+}
+.chap2-sec1 .poeple p{
+    font-size: 45px;
+    font-weight: 200;
+}
+.chap2-sec2 .stop #stop{
+    font-size: 80px;
+    font-weight: 500;
+}
+.chap2-sec2 .stop span{
+    font-size: 45px;
+    font-weight: 200;
+}
+.chap2-sec2 .animals #animals{
+    font-size: 80px;
+    font-weight: 500;
+}
+.chap2-sec2 .animals p{
+    font-size: 45px;
+    font-weight: 200;
+}
+.chap2-sec3 .world #world{
+    font-size: 80px;
+    font-weight: 500;
+}
+.chap2-sec3 .world span{
+    font-size: 45px;
+    font-weight: 200;
+}
+.percent{
+    font-size: 80px;
+    font-weight: 500;
+}
+.continue , .upTo{
+    font-size: 45px;
+    font-weight: 200;
+}
+.chap2-sec4{
+    padding: 0 200px;
+    margin-bottom: 100px;
+}
+.chap2-sec4 .discover #discover{
+    font-size: 45px;
+}
+.chap2-sec4 .discover p{
+    font-size: 25px;
+    margin-top: 50px;
+}
+.chap2-sec5{
+    background: url(images/bg2.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: antiquewhite; */
+    height: 500px;
+    text-align: center;
+}
+.chap2-sec5 span{
+    color: rgb(173, 173, 173);
+}
+.chap2-sec6{
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+}
+.quote{
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+.zir-title{
+    font-size: 35px;
+    padding-left: 250px;
+    margin-top: 80px;
+}
+.chap2-sec1 , .chap2-sec2 , .chap2-sec3 , .chap2-sec4{
+    display: flex;
+    justify-content: space-evenly;
+}
+.chapter2-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    text-align: center;
+    background-color: #f8f3f0;
+    color: rgb(0, 0, 88);
+}
+.chapter2-footer h5{
+    color: rgb(192, 192, 192);
+    font-weight: 200;
+    font-size: 25px;
+}
+.chapter2-footer h2{
+    font-size: 60px;
+    transition: 0.5s;
+}
+.chapter2-footer h2:hover i{
+    transform: translate(50px);
+}
+.chapter2-footer h2 i:hover{
+    transform: translateX(50px);
+}
+.chapter2-footer hr{
+    margin: auto;
+    width: 30%;
+    color: rgb(255, 255, 255);
+}
+/* ----------------------------chapter 3------------------------------------- */
+.chapter3{
+    /* background-color: rgb(215, 227, 250); */
+    color: rgb(0, 0, 88);
+}
+.chapter3 .title{
+    font-size: 55px;
+    text-align: center;
+    /* height: 100vh; */
+}
+.con32-box{
+    display: flex;
+    justify-content: center;
+    padding: 0 230px;
+}
+.box{
+    flex: 1;
+    text-align: justify;
+    margin-right: 15px;
+}
+.con33-box{
+    display: flex;
+    justify-content: center;
+    padding: 0 230px;
+    margin-bottom: 80px;
+}
+.onvan3-2 , .onvan3-3{
+    font-size: 60px;
+    padding-left: 250px;
+    margin-top: 120px;
+}
+.zironvan3-2 , .zironvan3-3{
+    font-size: 35px;
+    padding-left: 250px;
+}
+.chapter3-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #f8f3f0;
+    color: rgb(0, 0, 88);
+}
+.chapter3-footer h5{
+    color: rgb(192, 192, 192);
+    font-weight: 200;
+    font-size: 25px;
+}
+.chapter3-footer h2{
+    font-size: 60px;
+    transition: 0.5s;
+}
+.chapter3-footer h2:hover i{
+    transform: translate(50px);
+}
+.chapter3-footer h2 i:hover{
+    transform: translateX(50px);
+}
+.chapter3-footer hr{
+    margin: auto;
+    width: 30%;
+    color: rgb(255, 255, 255);
+}
+/* ----------------------------chapter 4------------------------------------- */
+.chapter4{
+    color: rgb(0, 0, 88);
+}
+.chapter4 .title{
+    font-size: 55px;
+    text-align: center;
+}
+.chapter4 .onvan-slider{
+    margin-top: 80px;
+    font-size: 55px;
+    padding-left: 200px;
+}
+.con4-zir-slider{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+.chap4-sec1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.chap41-left p{
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+.chap4-sec3{
+    padding: 100px 220px;
+}
+.chap43-up{
+    margin-bottom: 80px;
+}
+.logo-titles43{
+    font-size: 35px;
+}
+.logos img{
+    margin-right: 40px;
+    cursor: pointer;
+}
+.chap4-sec4{
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+}
+.chapter4-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    padding: 150px 0 80px 0;
+    text-align: center;
+    background-color: #f8f3f0;
+    color: rgb(0, 0, 88);
+}
+.chapter4-footer h5{
+    color: rgb(192, 192, 192);
+    font-weight: 200;
+    font-size: 25px;
+}
+.chapter4-footer h2{
+    font-size: 60px;
+    transition: 0.5s;
+}
+.chapter4-footer h2 a{
+    text-decoration: none;
+    color: rgb(0, 0, 88);
+}
+.chapter4-footer h2:hover i{
+    transform: translate(50px);
+}
+.chapter4-footer h2 i:hover{
+    transform: translateX(50px);
+}
+.chapter4-footer hr{
+    margin: auto;
+    width: 30%;
+    color: rgb(255, 255, 255);
+}
+.zir-slider{
+    text-align: center;
+    /* margin: auto; */
+}
+/* -------------footer------------------ */
+/* -------------footer------------------ */
+/* -------------footer------------------ */
+
+footer{
+    background-color: #f8f3f0;
+    padding: 100px;
+}
+footer .f-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.f-main .left-down img{
+    cursor: pointer;
+    transition: 0.5s;
+}
+.f-main .left-down img:hover{
+    transform: rotate(180deg);
+}
+.f-main .left-up span{
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(0, 0, 88);
+}
+.f-main .f-right{
+    padding-left: 50px;
+}
+.f-main .right-up{
+    display: flex;
+    align-items: center;
+    padding-bottom: 25px;
+}
+.f-main .right-up a{
+    color: rgb(0, 0, 88);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: smaller;
+    font-weight: lighter;
+}
+.f-main i{
+    color: rgb(0, 0, 88);
+}
+.f-main .right-down p{
+    color: rgb(163, 163, 163);
+}
+.f-main .right-down a{
+    font-weight: bold;
+    color: rgb(163, 163, 163);
+}
+.icons i{
+    font-size: 25px;
+    border: 1px solid rgb(163, 163, 163);
+    border-radius: 400px;
+    padding: 5px 6px;
+    cursor: pointer;
+}
+/* ---------END----footer------------------ */
+/* ---------END----footer------------------ */
+/* .chapter4 , .chapter3 , .chapter2{
+    display: none;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.progress-bar {
+    height: 31px;
+    background: #bd905b;
+    width: 0%;
+}
+.txts1{
+    position: fixed;
+    top: 7px;
+    left: 40px;
+}
+.txts2{
+    position: fixed;
+    bottom: 7px;
+    right: 40px;
+}
+.txts3 a{
+    transform: rotate(90deg);
+    /* transform-origin: topleft; */
+    position: fixed;
+    left: -95px;
+    top: 150px;
+}
+.txts4 a{
+    /* transform: rotate(90deg); */
+    position: fixed;
+
+}
+.prog{
+    z-index: 4444;
+    position: fixed;
+}
+.ud{
+    height: 30px;
+    /* background-color: red; */
+}
+.lr{
+    /* background-color: blue; */
+}
+.lr .number{
+    display: block;
+    padding-left: 50px;
+    padding-top: 15px;
+    transform: rotate(90deg);
+    transform-origin: topleft;
+}
+.up{
+    width: 100%;
+    border-bottom: 1px solid rgb(186, 186, 186);
+    top: 0;
+    left: 31px;
+}
+.down{
+    width: calc(100% - 31px);
+    border-top: 1px solid rgb(186, 186, 186);
+    bottom: 0;
+    right: 31px;
+}
+.left{
+    /* display: inline-block; */
+    width: 30px;
+    height: calc(100vh - 30px);
+    left: 0;
+    top: 0;
+    border-right: 1px solid rgb(186, 186, 186);
+}
+.right{
+    width: 31px;
+    height: calc(100vh - 30px);
+    right: 0;
+    top: 30px;
+    border-left: 1px solid rgb(186, 186, 186);
+}
+
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* -----------------------list and modals ------------------------------ */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+.list{
+    width: 500px;
+    height: 450px;
+    direction: rtl;
+    list-style: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2000033;
+    padding-right: 80px;
+    padding-top: 130px;
+    transition: 0.7s;
+    opacity: 0;
+    visibility: hidden;
+}
+.list li{
+    margin: 15px 0;
+}
+.list .big-item:hover a{
+    font-size: 30px;
+}
+.list .small-item:hover a{
+    font-size: 22px;
+}
+.list li a{
+    text-decoration: none;
+}
+.big-item a{
+    color: #bd905b;
+    font-size: 22px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.small-item{
+    font-size: 16px;
+}
+.small-item a{
+    transition: 0.5s;          
+}
+.modal{
+    background-color: rgba(0, 0, 0, 0.47);
+    z-index: 200000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.7s;
+    opacity: 0;
+    visibility: hidden;
+}
+.dayere{
+    z-index: 200001;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition: 0.7s;
+    opacity: 0;
+    visibility: hidden;
+
+}
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------end list and modals ------------------------------ */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes hoverAnim {
+            to{
+                transform: rotate(90deg);
+            }
+        }
+        @keyframes topright {
+            from{
+                top: -70%;
+                left: 120%;
+                transform: skew(45deg,20deg);
+            }
+            to{
+                top: 0;
+                left: 50%;
+                transform: skew();
+            }
+        }
+        @keyframes topleft {
+            from{
+                top: -40%;
+                left: -60%;
+                transform: skew(45deg,20deg);
+            }
+            to{
+                top: 0;
+                left: 0;
+                transform: skew();
+            }
+        }
+        @keyframes bottomright {
+            from{
+                top: 120%;
+                left: 120%;
+                transform: skew(45deg,20deg);
+            }
+            to{
+                top: 63%;
+                left: 50%;
+                transform: skew();
+            }
+        }
+        @keyframes bottomleft {
+            from{
+                top: 120%;
+                left: -60%;
+                transform: skew(45deg,20deg);
+            }
+            to{
+                top: 37%;
+                left: 0;
+                transform: skew();
+            }
+        }
+        body{
+            overflow: hidden;
+        }
+        .section{
+            position: absolute;
+            width: 50%;
+            color: rgb(0, 0, 88);
+        }
+        #up-right{
+            top: 0;
+            left: 50%;
+            height: 63%;
+            animation: 2s topright;
+            border-left: 1px solid rgb(0, 0, 88);
+            border-bottom: 1px solid rgb(0, 0, 88);
+        }
+        #up-right:hover{
+            cursor: pointer;
+            background-color: #f0e3dc;
+        }
+        #up-right:hover span{
+            /* animation: hoverAnim 2s ease ; */
+            right: 35%;
+            top: 45%;
+        }
+        #up-right span{
+            position: absolute;
+            padding: 20px;
+            bottom: 0;
+        }
+        #down-right{
+            top: calc(63%);
+            left: 50%;
+            height: 37%;
+            animation: 2s bottomright;
+            border-left: 1px solid rgb(0, 0, 88);
+            border-top: 1px solid rgb(0, 0, 88);
+        }
+        #down-right:hover{
+            cursor: pointer;
+            background-color: #f0e3dc;
+        }
+        #down-right:hover span{
+            top: 40%;
+            right: 35%;
+        }
+        #down-right span{
+            position: absolute;
+            top: 0;
+            padding: 20px;
+        }
+        #up-left{
+            top: 0;
+            left: 0;
+            height: 37%;
+            animation: 2s topleft;
+            border-bottom: 1px solid rgb(0, 0, 88);
+            border-right: 1px solid rgb(0, 0, 88);
+        }
+        #up-left:hover{
+            cursor: pointer;
+            background-color: #f0e3dc;
+        }
+        #up-left:hover span{
+            right: 30%;
+            bottom: 40%;
+        }
+        #up-left span{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            padding: 20px;
+        }
+        #down-left{
+            top: calc(37% );
+            left: 0;
+            height: 63%;
+            border-right: 1px solid rgb(0, 0, 88);
+            border-top:1px solid rgb(0, 0, 88) ;
+            animation: 2s bottomleft;
+        }
+        #down-left:hover{
+            cursor: pointer;
+            background-color: #f0e3dc;
+        }
+        #down-left:hover span{
+            right: 30%;
+            top: 40%;
+        }
+        #down-left span{
+            position: absolute;
+            right: 0;
+            padding: 20px;
+            /* transition: 1.5s; */
+        }
+    </style>
+</head>
+<body>
+    <div id="up-right" class="section">
+        <!-- chapter2 -->
+        <span>2. WHAT ARE ITS BENEFITS</span> 
+    </div>
+    <div id="down-right" class="section">
+        <!-- chapter3 -->
+        <span>3. HOW DOES IT WORK</span>
+    </div>
+
+    <div id="up-left" class="section">
+        <!-- chapter1 -->
+        <span>1. WHAT IS CELLULAR AGRICULTURE</span>
+    </div>
+    <div id="down-left" class="section">
+        <!-- chapter4 -->
+        <span>4. WHAT IS THE ROLE OF CAS</span>
+    </div>
+
+
+
+
+    <script>
+        var upRight = document.querySelector('#up-right')
+        var upleft = document.querySelector('#up-left')
+        var downRight = document.querySelector('#down-right')
+        var downleft = document.querySelector('#down-left')
+
+        upRight.addEventListener('click' , function(){
+            window.location = 'file:///C:/Users/paeiz/Desktop/%D9%BE%D8%B1%D9%88%DA%98%D9%87%20%D9%BE%D8%A7%DB%8C%D8%A7%D9%86%20%D8%AA%D8%B1%D9%85/home2.html'
+        })
+        upleft.addEventListener('click' , function(){
+            window.location = 'file:///C:/Users/paeiz/Desktop/%D9%BE%D8%B1%D9%88%DA%98%D9%87%20%D9%BE%D8%A7%DB%8C%D8%A7%D9%86%20%D8%AA%D8%B1%D9%85/home2.html'
+        })
+        downRight.addEventListener('click' , function(){
+            window.location = 'file:///C:/Users/paeiz/Desktop/%D9%BE%D8%B1%D9%88%DA%98%D9%87%20%D9%BE%D8%A7%DB%8C%D8%A7%D9%86%20%D8%AA%D8%B1%D9%85/home2.html'
+        })
+        downleft.addEventListener('click' , function(){
+            window.location = 'file:///C:/Users/paeiz/Desktop/%D9%BE%D8%B1%D9%88%DA%98%D9%87%20%D9%BE%D8%A7%DB%8C%D8%A7%D9%86%20%D8%AA%D8%B1%D9%85/home2.html'
+        })
+
+        window.addEventListener('scroll' , function(){
+            upRight.style.animation = 'topright'
+            upleft.style.animation = 'topleft'
+            downRight.style.animation = 'bottomright'
+            downleft.style.animation = 'bottomleft'
+
+        })
+
+
+        document.body.addEventListener('wheel' , function(event){
+            if (event.wheelDelta > 0) {
+                window.location = 'file:///C:/Users/paeiz/Desktop/%D9%BE%D8%B1%D9%88%DA%98%D9%87%20%D9%BE%D8%A7%DB%8C%D8%A7%D9%86%20%D8%AA%D8%B1%D9%85/home.html'
+                // window.location = 'file:///C:/Users/paeiz/Desktop/%D9%BE%D8%B1%D9%88%DA%98%D9%87%20%D9%BE%D8%A7%DB%8C%D8%A7%D9%86%20%D8%AA%D8%B1%D9%85/animation.html'
+            }else if(event.wheelDelta < 0){
+                window.location = 'file:///C:/Users/paeiz/Desktop/%D9%BE%D8%B1%D9%88%DA%98%D9%87%20%D9%BE%D8%A7%DB%8C%D8%A7%D9%86%20%D8%AA%D8%B1%D9%85/home.html'
+            }
+        })
+    </script>
+</body>
+</html>

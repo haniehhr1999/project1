@@ -1,0 +1,47 @@
+<html>
+<head>
+    <script src="jquery-1.10.2.js"></script>
+    <script src="CircularLoader-v1.3.js"></script>
+</head>
+<body>
+<div id="divProgress"></div>
+<div style="display:block;">Click on checkbox for progress</div>
+<input type="checkbox" />
+<input type="checkbox" />
+<input type="checkbox" />
+<input type="checkbox" />
+<input type="checkbox" />
+<input type="checkbox" />
+<input type="checkbox" />
+
+<script>
+$(document).ready(function () {
+        update();
+        $('input').click(function () {
+            update();
+        });
+    });
+    function update() {
+
+        var numberOfChecked = $('input:checkbox:checked').length;
+        var totalCheckboxes = $('input:checkbox').length;
+
+        var numberNotChecked = totalCheckboxes - numberOfChecked;
+        var perc = (numberOfChecked / totalCheckboxes) * 100;
+        $("#divProgress").circularloader({
+            progressPercent: perc,
+            backgroundColor: "#ffffff",//background colour of inner circle
+            fontColor: "#000000",//font color of progress text
+            fontSize: "40px",//font size of progress text
+            radius: 70,//radius of circle
+            progressBarBackground: "#cdcdcd",//background colour of circular progress Bar
+            progressBarColor: "#ffc300",//colour of circular progress bar
+            progressBarWidth: 25,//progress bar width
+            speed: 10,
+            progressvalue: perc,
+            showText: true
+        });
+    }
+</script>
+</body>
+</html>

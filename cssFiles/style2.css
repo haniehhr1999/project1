@@ -1,0 +1,296 @@
+/* for faq  */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* ///////////////////////// */
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    /* background-color: #f1f1f1; */
+}
+.header span{
+    position: absolute;
+    left: 35px;
+    font-size: small;
+    font-weight: bold;
+    line-height: 30px;
+    color: rgb(0, 0, 88) ;
+}
+/* The progress container (grey background) */
+.progress-container {
+    width: 100%;
+    height: 31px;
+    /* background: #ccc; */
+    border-bottom: 1px solid #ccc;
+}
+  
+/* The progress bar (scroll indicator) */
+.progress-bar {
+    height: 31px;
+    background: #bd905b;
+    width: 0%;
+}
+.header-down{
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 0;
+    position: fixed;
+    top: 31px;
+    z-index: 5;
+    width: 100%;
+}
+.menu{
+    display: flex;
+    opacity: 0;
+    transition: 0.7s;
+}
+.menu li{
+    list-style: none;
+    margin: 0 20px;
+    color: grey;
+}
+.menu li a{
+    text-decoration: none;
+    color: rgb(0, 0, 88);
+    transition: 1s;
+}
+.hamburger{
+    cursor: pointer;
+    padding: 15px;
+    border: 1px solid rgb(0, 0, 88);
+    border-radius: 50%;
+}
+i{
+    color: rgb(0, 0, 88) ;
+    /* margin: auto; */
+}
+
+
+/* //////////////////////////////// */
+
+
+
+
+h1{
+    color: rgb(0, 0, 88);
+    padding-top: 150px;
+    padding-left: 200px;
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+.container{
+    display: flex;
+    padding: 0 200px;
+    padding-bottom: 150px;
+    font-size: 30px;
+}
+.container .left-side{
+    flex: 1;
+}
+.container .right-side{
+    flex: 1;
+}
+p{
+    color: rgb(0, 0, 88);
+}
+.left-side button{
+    border: 1px solid rgb(0, 0, 88);
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px 25px;
+    transition: 0.5s;
+    margin-top: 50px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(0, 0, 88) ;
+}
+button:hover a{
+    color: white;
+}
+button a{
+    text-decoration: none;
+    color: rgb(0, 0, 88);
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+/* -------------footer------------------ */
+
+footer{
+    background-color: #f5ede8;
+    padding: 100px;
+}
+footer .f-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.f-main .left-down img{
+    cursor: pointer;
+    transition: 0.5s;
+}
+.f-main .left-down img:hover{
+    transform: rotate(180deg);
+}
+.f-main .left-up span{
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(0, 0, 88);
+}
+.f-main .f-right{
+    padding-left: 50px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; */
+}
+.f-main .right-up{
+    display: flex;
+    align-items: center;
+    padding-bottom: 25px;
+}
+.f-main .right-up a{
+    color: rgb(0, 0, 88);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: smaller;
+    font-weight: lighter;
+}
+.f-main i{
+    color: rgb(0, 0, 88);
+}
+.f-main .right-down p{
+    color: rgb(163, 163, 163);
+}
+.f-main .right-down a{
+    font-weight: bold;
+    color: rgb(163, 163, 163);
+}
+.icons i{
+    font-size: 25px;
+    border: 1px solid rgb(163, 163, 163);
+    border-radius: 400px;
+    padding: 5px 6px;
+    cursor: pointer;
+}
+
+/* -----------------------creating accardeon------------------- */
+/* -----------------------creating accardeon------------------- */
+/* -----------------------creating accardeon------------------- */
+.accordion {
+    background-color: #fff;
+    color: rgb(0, 0, 88);
+    cursor: pointer;
+    /* font-weight: bold; */
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    border-bottom: 1px solid grey;
+    border-radius: 0;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+}
+.accordion span{
+    font-size: 22px;
+}
+.active, .accordion:hover {
+    background-color: #bd8f5b;
+    color: white;
+}
+.active, .accordion:hover i{
+    color: white;
+}
+  
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+.panel p{
+    font-size: 18px;
+    margin: 28px 0;
+}
+
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* -----------------------list and modals ------------------------------ */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+.list{
+    width: 500px;
+    height: 450px;
+    direction: rtl;
+    list-style: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 4;
+    padding-right: 80px;
+    padding-top: 130px;
+    transition: 0.7s;
+    opacity: 0;
+    visibility: hidden;
+
+}
+.list li{
+    margin: 15px 0;
+}
+.list .big-item:hover a{
+    font-size: 30px;
+}
+.list .small-item:hover a{
+    font-size: 22px;
+}
+.list li a{
+    text-decoration: none;
+}
+.big-item a{
+    color: #bd905b;
+    font-size: 22px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.small-item{
+    font-size: 16px;
+}
+.small-item a{
+    transition: 0.5s;          
+}
+.modal{
+    background-color: rgba(0, 0, 0, 0.47);
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.7s;
+    opacity: 0;
+    visibility: hidden;
+}
+.dayere{
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition: 0.7s;
+    opacity: 0;
+    visibility: hidden;
+
+
+}
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------end list and modals ------------------------------ */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */

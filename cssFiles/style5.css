@@ -1,0 +1,248 @@
+/* for contact.html  */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* ///////////////////////// */
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    /* background-color: #f1f1f1; */
+}
+.header span{
+    position: absolute;
+    left: 35px;
+    font-size: small;
+    font-weight: bold;
+    line-height: 30px;
+    color: rgb(0, 0, 88) ;
+}
+/* The progress container (grey background) */
+.progress-container {
+    width: 100%;
+    height: 31px;
+    /* background: #ccc; */
+    border-bottom: 1px solid #ccc;
+}
+  
+/* The progress bar (scroll indicator) */
+.progress-bar {
+    height: 31px;
+    background: #bd905b;
+    width: 0%;
+}
+.header-down{
+    /* background-color: white; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    position: fixed;
+    top: 31px;
+    z-index: 5;
+    width: 100%;
+}
+.menu{
+    display: flex;
+    opacity: 0;
+    transition: 0.7s;
+}
+.menu li{
+    list-style: none;
+    margin: 0 20px;
+    color: grey;
+}
+.menu li a{
+    text-decoration: none;
+    color: rgb(0, 0, 88);
+    transition: 1s;
+}
+.logo{
+    /* float: left; */
+    padding-left: 80px;
+}
+.hamburger{
+    /* float: right; */
+    margin-right: 80px;
+    cursor: pointer;
+    padding: 15px;
+    border: 1px solid rgb(0, 0, 88);
+    border-radius: 50%;
+}
+.hamburger i{
+    color: rgb(0, 0, 88) ;
+    /* margin: auto; */
+}
+
+
+/* //////////////////////////////// */
+h1{
+    margin-top: 150px;
+    margin-bottom: 100px;
+    margin-left: 230px;
+    font-size: 90px;
+    font-weight: lighter;
+    color: rgb(0, 0, 88);
+    border-bottom: 1px solid #bd905b;
+    display: inline-block;
+}
+.data{
+    padding-left: 230px;
+    display: flex;
+    margin-bottom: 150px;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+}
+.data span{
+    font-size: 22px;
+    color: grey;
+    display: inline-block;
+    margin-bottom: 15px ;
+}
+.data h3{
+    color: #bd905b;
+    font-size: 25px;
+    padding: 5px 0;
+    /* font-size: larger; */
+}
+.left h3{
+    cursor: pointer;
+}
+.l-up{
+    margin-bottom: 30px;
+    /* align-items: ; */
+}
+.right{
+    margin-left: 300px;
+}
+/* -------------footer------------------ */
+
+footer{
+    background-color: #f8f3f0;
+    padding: 100px;
+}
+footer .f-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.f-main .left-down img{
+    cursor: pointer;
+    transition: 0.5s;
+}
+.f-main .left-down img:hover{
+    transform: rotate(180deg);
+}
+.f-main .left-up span{
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(0, 0, 88);
+}
+.f-main .f-right{
+    padding-left: 50px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; */
+}
+.f-main .right-up{
+    display: flex;
+    align-items: center;
+    padding-bottom: 25px;
+}
+.f-main .right-up a{
+    color: rgb(0, 0, 88);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: smaller;
+    font-weight: lighter;
+}
+.f-main i{
+    color: rgb(0, 0, 88);
+}
+.f-main .right-down p{
+    color: rgb(163, 163, 163);
+}
+.f-main .right-down a{
+    font-weight: bold;
+    color: rgb(163, 163, 163);
+}
+.icons i{
+    font-size: 25px;
+    border: 1px solid rgb(163, 163, 163);
+    border-radius: 400px;
+    padding: 5px 6px;
+    cursor: pointer;
+}
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* -----------------------list and modals ------------------------------ */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+.list{
+    width: 500px;
+    height: 450px;
+    direction: rtl;
+    list-style: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 4;
+    padding-right: 80px;
+    padding-top: 130px;
+    transition: 0.7s;
+    opacity: 0;
+    visibility: hidden;
+}
+.list li{
+    margin: 15px 0;
+}
+.list .big-item:hover a{
+    font-size: 30px;
+}
+.list .small-item:hover a{
+    font-size: 22px;
+}
+.list li a{
+    text-decoration: none;
+}
+.big-item a{
+    color: #bd905b;
+    font-size: 22px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.small-item{
+    font-size: 16px;
+}
+.small-item a{
+    transition: 0.5s;          
+}
+.modal{
+    background-color: rgba(0, 0, 0, 0.47);
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.7s;
+    opacity: 0;
+    visibility: hidden;
+}
+.dayere{
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition: 0.7s;
+    opacity: 0;
+    visibility: hidden;
+
+}
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------end list and modals ------------------------------ */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */

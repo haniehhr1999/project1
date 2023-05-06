@@ -1,0 +1,649 @@
+/* ------for team.html--------------- */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* ------------header & progress bar------------------------------------------------------------- */
+/* .p2{
+    position: relative;
+    background-color: rgb(4, 0, 82);
+    width: 100%;
+    height: 450px;
+    margin-bottom: 10px ;
+} */
+body , html{
+    scroll-behavior: smooth;
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    /* background-color: #f1f1f1; */
+}
+.header span{
+    position: absolute;
+    left: 35px;
+    font-size: small;
+    font-weight: bold;
+    line-height: 30px;
+    color: rgb(0, 0, 88) ;
+}
+/* The progress container (grey background) */
+.progress-container {
+    width: 100%;
+    height: 31px;
+    /* background: #ccc; */
+    border-bottom: 1px solid #ccc;
+}
+  
+/* The progress bar (scroll indicator) */
+.progress-bar {
+    height: 31px;
+    background: #bd905b;
+    width: 0%;
+}
+.header-down{
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 0;
+    position: fixed;
+    top: 31px;
+    z-index: 999999;
+    width: 100%;
+}
+.menu{
+    display: flex;
+    opacity: 0;
+    transition: 0.7s;
+}
+.menu li{
+    list-style: none;
+    margin: 0 20px;
+    color: grey;
+}
+.menu li a{
+    text-decoration: none;
+    color: rgb(0, 0, 88);
+    transition: 1s;
+}
+.hamburger{
+    cursor: pointer;
+    padding: 15px;
+    border: 1px solid rgb(0, 0, 88);
+    border-radius: 50%;
+}
+i{
+    color: rgb(0, 0, 88) ;
+    /* margin: auto; */
+}
+/* ------------end header & progress bar------------------------------------------------------------- */
+
+  
+
+
+
+
+/* -----------background----------------------------------------------------------------------------- */
+.bg{
+    /* background-color: aquamarine; */
+    color: rgb(0, 0, 88) ;
+    width: 100%;
+    /* position: relative; */
+    height: 100vh;
+    box-sizing: border-box;
+}
+.text-bg{
+    position: absolute;
+    left: 250px;
+    right: 250px;
+    top: 200px;
+    bottom: 50px;
+    /* padding: 200px 250px 50px; */
+    /* z-index: 2222; */
+}
+.text-bg h1{
+    font-size: 150px;
+}
+.text-bg p{
+    font-size: 50px;
+}
+
+/*------------end background--------------------------------------------------------------------------*/
+/* ---------------part1------------------------------------------------------------------------------ */
+.part1{
+    display: flex;
+    padding: 100px 250px;
+    /* background-color: antiquewhite; */
+}
+.part1-right{
+    margin-left: 50px;
+}
+.part1-right h2{
+    color: #bd905b;
+    font-size: 40px;
+    margin-bottom: 30px ;
+}
+.part1-right span{
+    color: rgb(174, 174, 174);
+    font-size: larger;
+}
+.part1-right .acrd button{
+    border-radius: 50%;
+    border: 1px solid rgb(0, 0, 88);
+    background-color: white;
+    padding: 15px;
+}
+.acrd{
+    margin-top: 50px;
+    cursor: pointer;
+}
+.acrd span{
+    color:rgb(0, 0, 88) ;
+    font-size: smaller;
+    display: inline-block;
+    transition: 1s;
+}
+.acrd span:hover{
+    transform: scaleX(1.5);
+    transform-origin: left;
+}
+/* ---------------end part1------------------------------------------------------------------------------- */
+/* ---------------part2----------------------------------------------------------------------------------- */
+.part2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 230px;
+}
+.part2 .define span{
+    display: inline-block;
+}
+.define{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 8px;
+}
+.define span{
+    color: #bd905b;
+    padding: 20px 0;
+    font-size: larger;
+    font-weight: bold;
+}
+.part2-btns{
+    text-align: center;
+    margin-top: 40px;
+}
+.part2-btns button{
+    width: 200px;
+    padding: 20px 30px;
+    margin: 0 10px;
+    border-radius: 50px;
+    border: 1px solid rgb(0, 0, 88);
+    background-color: white;
+    font-size: x-small;
+    font-weight: bold;
+    color:rgb(0, 0, 88) ;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.part2-btns button:hover{
+    background-color: rgb(0, 0, 88);
+    color: white;
+}
+/* ---------------end part2--------------------------------------------------------------------------------------- */
+/* ---------------part3--------------------------------------------------------------------------------------- */
+.part3{
+    padding: 0 230px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.define2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 8px;
+}
+.define2 h4{
+    color: #bd905b;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.define2 span{
+    color: rgb(162, 162, 162);
+    font-size: smaller;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+.part3-btns{
+    text-align: center;
+    margin-top: 40px;
+}
+.part3-btns button{
+    width: 200px;
+    padding: 20px 30px;
+    margin: 0 10px;
+    border-radius: 50px;
+    border: 1px solid rgb(0, 0, 88);
+    background-color: white;
+    font-size: x-small;
+    font-weight: bold;
+    color:rgb(0, 0, 88) ;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.part3-btns button:hover{
+    background-color: rgb(0, 0, 88);
+    color: white;
+}
+/* ---------------end part3-------------------- */
+/* ---------------part4-------------------- */
+.part4{
+    padding: 0 230px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.define4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 8px;
+}
+.define4 h4{
+    color: #bd905b;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.define4 span{
+    color: rgb(162, 162, 162);
+    font-size: smaller;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+.part4-btns{
+    text-align: center;
+    margin-top: 40px;
+}
+.part4-btns button{
+    width: 300px;
+    padding: 20px 30px;
+    margin: 0 10px;
+    border-radius: 50px;
+    border: 1px solid rgb(0, 0, 88);
+    background-color: white;
+    font-size: x-small;
+    font-weight: bold;
+    color:rgb(0, 0, 88) ;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.part4-btns button:hover{
+    background-color: rgb(0, 0, 88);
+    color: white;
+}
+/* ---------------end part4-------------------- */
+/* ---------------part5-------------------- */
+.part5{
+    padding: 0 230px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.define5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 8px;
+}
+.define5 span{
+    color: #bd905b;
+    padding-top: 20px;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+/* ---------------end part5-------------------- */
+
+
+
+
+
+
+
+
+
+
+
+.fellowship{
+    border: none;
+    background-color: transparent;
+}
+.fellowship a{
+    text-decoration: none;
+}
+hr{
+    margin: 100px auto;
+    width: 60%;
+    
+}
+
+/* -------------footer------------------ */
+.pre-form{
+    font-weight: bold;
+    font-size: 28px;
+    color: rgb(0, 0, 88);
+}
+
+footer{
+    background-color: #f5ede8;
+    padding: 150px 330px;
+    z-index: 5;
+    /* position: fixed;
+    width: 100%; */
+}
+.part1-footer p{
+    font-size: 60px;
+    font-weight: bold;
+    color: rgb(0, 0, 88) ;
+}
+.part1-footer span{
+    color: rgb(0, 0, 88) ;
+    font-size: 23px;
+    display: inline-block;
+    padding-bottom: 80px;
+}
+.part2-footer h4{
+    color: #bd905b;
+    padding: 10px 0;
+    font-size: large;
+}
+.part2-footer{
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+}
+.videos{
+    margin: 0 10px;
+}
+.part3-footer{
+    padding: 50px 0;
+}
+.part3-footer form .const1 input{
+    height: 27px;
+    width: 300px;
+    padding: 10px 20px;
+    border: none;
+}
+.radio{
+    margin: 15px;
+}
+label{
+    margin-right: 10px;
+    color: rgb(0, 0, 88);
+    font-weight: bold;
+}
+.const3 input{
+    /* width: calc(100% - 40px); */
+    width: 64px;
+    height: 27px;
+    padding: 10px 20px;
+    border: none;
+}
+.part3-footer form button{
+    background-color: rgb(0, 0, 88);
+    border: 1px solid rgb(0, 0, 88);
+    color: white;
+    border-radius: 50px;
+    padding: 15px 55px;
+    font-size: smaller;
+    cursor: pointer;
+    transition: 1s;
+    margin-top: 35px;
+}
+.part3-footer form button:hover{
+    background-color: #bd905b;
+    border: 1px solid #bd905b;
+}
+
+
+
+footer .f-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+.f-main .left-down img{
+    cursor: pointer;
+    transition: 0.5s;
+}
+.f-main .left-down img:hover{
+    transform: rotate(180deg);
+}
+.f-main .left-up span{
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(0, 0, 88);
+}
+.f-main .f-right{
+    padding-left: 50px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; */
+}
+.f-main .right-up{
+    display: flex;
+    align-items: center;
+    padding-bottom: 25px;
+}
+.f-main .right-up a{
+    color: rgb(0, 0, 88);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: smaller;
+    font-weight: lighter;
+}
+.f-main i{
+    color: rgb(0, 0, 88);
+}
+.f-main .right-down p{
+    color: rgb(163, 163, 163);
+}
+.f-main .right-down a{
+    font-weight: bold;
+    color: rgb(163, 163, 163);
+}
+.icons i{
+    font-size: 25px;
+    border: 1px solid rgb(163, 163, 163);
+    border-radius: 400px;
+    padding: 5px 6px;
+    cursor: pointer;
+}
+
+
+
+/* ---------------- for hover image ------------- */
+.wrap {
+    margin: 2rem;
+    transform-style: preserve-3d;
+    transform: perspective(100rem);
+    cursor: pointer;
+  }
+  
+  .container {
+    --rX: 0;
+    --rY: 0;
+    --bX: 50%;
+    --bY: 80%;
+  
+    width: 30rem;
+    height: 36rem;
+    border: 1px solid var(--background-color);
+    border-radius: 1.6rem;
+    padding: 4rem;
+  
+    display: flex;
+    align-items: flex-end;
+  
+    position: relative;
+    transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
+  
+    background: linear-gradient(hsla(0, 0%, 100%, 0.1), hsla(0, 0%, 100%, 0.1)),
+      url("images/photo-1559113513-d5e09c78b9dd.jpeg");
+    background-position: var(--bX) var(--bY);
+    background-size: 40rem auto;
+    box-shadow: 0 0 3rem 0.5rem hsla(0, 0%, 0%, 0.2);
+  
+    transition: transform 0.6s 1s;
+  }
+  
+  .container::before,
+  .container::after {
+    content: "";
+  
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid #fff;
+  
+    position: absolute;
+    z-index: 2;
+  
+    opacity: 0.3;
+    transition: 0.3s;
+  }
+  
+  .container::before {
+    top: 2rem;
+    left: 2rem;
+  
+    border-bottom-width: 0;
+    border-right-width: 0;
+  }
+  
+  .container::after {
+    bottom: 2rem;
+    right: 2rem;
+  
+    border-top-width: 0;
+    border-left-width: 0;
+  }
+  
+  .container--active {
+    transition: none;
+  }
+  
+  .container--2 {
+    filter: hue-rotate(80deg) saturate(140%);
+  }
+  
+  .container--3 {
+    filter: hue-rotate(160deg) saturate(140%);
+  }
+  
+  .container p {
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 2.2rem;
+  }
+  
+  .wrap:hover .container::before,
+  .wrap:hover .container::after {
+    width: calc(100% - 4rem);
+    height: calc(100% - 4rem);
+  }
+
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* -----------------------list and modals ------------------------------ */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+.list{
+    width: 500px;
+    height: 450px;
+    direction: rtl;
+    list-style: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999998;
+    padding-right: 80px;
+    padding-top: 130px;
+    transition: 0.7s;
+    opacity: 0;
+    visibility: hidden;
+}
+.list li{
+    margin: 15px 0;
+}
+.list .big-item:hover a{
+    font-size: 30px;
+}
+.list .small-item:hover a{
+    font-size: 22px;
+}
+.list li a{
+    text-decoration: none;
+}
+.big-item a{
+    color: #bd905b;
+    font-size: 22px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.small-item{
+    font-size: 16px;
+}
+.small-item a{
+    transition: 0.5s;          
+}
+.modal{
+    background-color: rgba(0, 0, 0, 0.47);
+    z-index: 1117;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.7s;
+    opacity: 0;
+    visibility: hidden;
+}
+.dayere{
+    z-index: 999997;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition: 0.7s;
+    opacity: 0;
+    visibility: hidden;
+
+}
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------end list and modals ------------------------------ */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,428 @@
+/* for press.html  */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* ///////////////////////// */
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    /* background-color: #f1f1f1; */
+}
+.header span{
+    position: absolute;
+    left: 35px;
+    font-size: small;
+    font-weight: bold;
+    line-height: 30px;
+    color: rgb(0, 0, 88) ;
+}
+/* The progress container (grey background) */
+.progress-container {
+    width: 100%;
+    height: 31px;
+    /* background: #ccc; */
+    border-bottom: 1px solid #ccc;
+}
+  
+/* The progress bar (scroll indicator) */
+.progress-bar {
+    height: 31px;
+    background: #bd905b;
+    width: 0%;
+}
+.header-down{
+    /* background-color: white; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    position: fixed;
+    top: 31px;
+    z-index: 1;
+    width: 100%;
+}
+.menu{
+    display: flex;
+    opacity: 0;
+    transition: 0.7s;
+}
+.menu li{
+    list-style: none;
+    margin: 0 20px;
+    color: grey;
+}
+.menu li a{
+    text-decoration: none;
+    color: rgb(0, 0, 88);
+    transition: 1s;
+}
+.logo{
+    /* float: left; */
+    padding-left: 80px;
+}
+.hamburger{
+    /* float: right; */
+    margin-right: 80px;
+    cursor: pointer;
+    padding: 15px;
+    border: 1px solid rgb(0, 0, 88);
+    border-radius: 50%;
+}
+i{
+    color: rgb(0, 0, 88) ;
+    /* margin: auto; */
+}
+/* ------------------------------------------ */
+h1{
+    margin-top: 150px;
+    margin-bottom: 100px;
+    margin-left: 230px;
+    font-size: 90px;
+    font-weight: lighter;
+    color: rgb(0, 0, 88);
+    border-bottom: 1px solid #bd905b;
+    display: inline-block;
+}
+.story h2{
+    width: 220px;
+    font-size: 25px;
+}
+
+
+/* -------------main-body------------------ */
+/* -------------main-body------------------ */
+/* -------------main-body------------------ */
+.part1{
+    display: flex;
+    padding: 0 230px;
+    color: rgb(0, 0, 88);
+    margin-bottom: 100px;
+}
+.part2{
+    display: flex;
+    padding: 0 230px;
+    color: rgb(0, 0, 88);
+    margin-bottom: 100px;    
+}
+.part3{
+    display: flex;
+    padding: 0 230px;
+    color: rgb(0, 0, 88);
+    margin-bottom: 100px;    
+}
+.part4{
+    display: flex;
+    padding: 0 230px;
+    color: rgb(0, 0, 88);
+    margin-bottom: 100px;    
+}
+.part5{
+    display: flex;
+    padding: 0 230px;
+    color: rgb(0, 0, 88);
+    margin-bottom: 100px;    
+}
+.part6{
+    display: flex;
+    padding: 0 230px;
+    color: rgb(0, 0, 88);
+    margin-bottom: 100px;    
+}
+.part7{
+    display: flex;
+    padding: 0 230px;
+    color: rgb(0, 0, 88);
+    margin-bottom: 100px;    
+}
+.part8{
+    display: flex;
+    padding: 0 230px;
+    color: rgb(0, 0, 88);
+    margin-bottom: 100px;    
+}
+.part9{
+    display: flex;
+    padding: 0 230px;
+    color: rgb(0, 0, 88);
+    margin-bottom: 100px;    
+}
+.part1-link{
+    margin-top: 40px;
+    cursor: pointer;
+}
+.part1-link:hover span{
+    transform: scaleX(1.5);
+    transform-origin: left;
+}
+.part1-link:hover i{
+    color: #bd905b;
+}
+.part1-link span{
+    display: inline-block;
+    margin-left: 20px;
+    transition: 0.7s;
+}
+.part1-link i{
+    border-radius: 50%;
+    border: 1px solid rgb(0, 0, 88);
+    padding: 17px;
+}
+p{
+    font-size: 22px;
+}
+h2{
+    min-width:220px;
+    font-size: larger;
+}
+.right-sec-p71 , .right-sec-p72 , .right-sec-p73 , .right-sec-p74{
+    display: flex;
+    flex-wrap: wrap;
+}
+.box-part7:nth-child(odd){
+    margin: 0 47px 55px 0;
+}
+.right-sec-p73 .box-part7 a{
+    font-size: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(0, 0, 88);
+}
+.box-part7 h3{
+    margin-top: 20px;
+    color: rgb(161, 161, 161);
+}
+.part2 button{
+    font-size: smaller;
+    width: 212px;
+    border-radius: 50px;
+    border: 1px solid rgb(0, 0, 88);
+    color: rgb(0, 0, 88);
+    background-color: white;
+    padding: 15px 0;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.part2 button a{
+    color: rgb(0, 0, 88);
+    text-decoration: none;
+    transition: 0.5s;
+}
+.part2 button:hover a{
+    color: white;
+}
+.part2 button:hover{
+    color: white;
+    background-color: rgb(0, 0, 88);
+}
+.part3 a{
+    color: rgb(0, 0, 88);
+    transition: 0.5s;
+}
+.part3 a:hover{
+    color: #bd905b;
+}
+.part4 .images{
+    cursor: pointer;
+}
+.part4-images1 ,.part4-images2 ,.part4-images3 , .part4-images4{
+    width: 783px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.part5 p a{
+    color: rgb(0, 0, 88);
+    transition: 0.5s;
+}
+.part5 p a:hover{
+    color: #bd905b;
+}
+.part6 .br-img-up{
+    width: 783px;
+}
+.part6 .br-img-up img{
+    margin-right: 40px;
+    cursor: pointer;
+}
+.part6 .br-img-down img{
+    margin-right: 30px;
+    cursor: pointer;
+}
+.part6 .brands hr{
+    margin-top: 41px;
+    margin-bottom: 45px;
+}
+.clrs{
+    width: 228.525px;
+    height: 138.82px;
+}
+.colors{
+    display: flex;
+}
+.colors span{
+    color: rgb(174, 174, 174);
+}
+.colors h3{
+    margin-top: 30px;
+}
+.abi{
+    margin-right: 40px;
+    background-color: rgb(0, 0, 88);
+}
+.roshan{
+    margin-right: 40px;
+    background-color: #f8f3f0;
+}
+.kerem{
+    margin-right: 40px;
+    background-color: #bd905b;    
+}
+.social i{
+    /* display: inline-block; */
+    border: 1px solid rgb(0, 0, 88);
+    border-radius: 50%;
+    font-size: 25px;
+    padding: 12px;
+    /* width: 59px;
+    height: 59px; */
+}
+/* ----------END---main-body------------------ */
+/* ----------END---main-body------------------ */
+/* ----------END---main-body------------------ */
+
+
+/* -------------footer------------------ */
+/* -------------footer------------------ */
+/* -------------footer------------------ */
+
+footer{
+    background-color: #f8f3f0;
+    padding: 100px;
+}
+footer .f-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.f-main .left-down img{
+    cursor: pointer;
+    transition: 0.5s;
+}
+.f-main .left-down img:hover{
+    transform: rotate(180deg);
+}
+.f-main .left-up span{
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(0, 0, 88);
+}
+.f-main .f-right{
+    padding-left: 50px;
+}
+.f-main .right-up{
+    display: flex;
+    align-items: center;
+    padding-bottom: 25px;
+}
+.f-main .right-up a{
+    color: rgb(0, 0, 88);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: smaller;
+    font-weight: lighter;
+}
+.f-main i{
+    color: rgb(0, 0, 88);
+}
+.f-main .right-down p{
+    color: rgb(163, 163, 163);
+}
+.f-main .right-down a{
+    font-weight: bold;
+    color: rgb(163, 163, 163);
+}
+.icons i{
+    font-size: 25px;
+    border: 1px solid rgb(163, 163, 163);
+    border-radius: 400px;
+    padding: 5px 6px;
+    cursor: pointer;
+}
+/* ---------END----footer------------------ */
+/* ---------END----footer------------------ */
+/* ---------END----footer------------------ */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* -----------------------list and modals ------------------------------ */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+.list{
+    width: 500px;
+    height: 450px;
+    direction: rtl;
+    list-style: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2000033;
+    padding-right: 80px;
+    padding-top: 130px;
+    transition: 0.7s;
+    opacity: 0;
+    visibility: hidden;
+}
+.list li{
+    margin: 15px 0;
+}
+.list .big-item:hover a{
+    font-size: 30px;
+}
+.list .small-item:hover a{
+    font-size: 22px;
+}
+.list li a{
+    text-decoration: none;
+}
+.big-item a{
+    color: #bd905b;
+    font-size: 22px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.small-item{
+    font-size: 16px;
+}
+.small-item a{
+    transition: 0.5s;          
+}
+.modal{
+    background-color: rgba(0, 0, 0, 0.47);
+    z-index: 200000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.7s;
+    opacity: 0;
+    visibility: hidden;
+}
+.dayere{
+    z-index: 200001;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition: 0.7s;
+    opacity: 0;
+    visibility: hidden;
+
+}
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------end list and modals ------------------------------ */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */

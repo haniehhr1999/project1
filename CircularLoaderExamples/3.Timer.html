@@ -1,0 +1,36 @@
+<html>
+<head>
+    <script src="jquery-1.10.2.js"></script>
+    <script src="CircularLoader-v1.3.js"></script>
+</head>
+<body>
+    <div id="divProgress"></div>
+    <script>
+        $(document).ready(function () {
+            $("#divProgress").circularloader({
+                backgroundColor: "#ffffff",//background colour of inner circle
+                fontColor: "#000000",//font color of progress text
+                fontSize: "40px",//font size of progress text
+                radius: 70,//radius of circle
+                progressBarBackground: "#cdcdcd",//background colour of circular progress Bar
+                progressBarColor: "#aaaaaa",//colour of circular progress bar
+                progressBarWidth: 25,//progress bar width
+                progressPercent: 0,//progress percentage out of 100
+                progressValue: 0,//diplay this value instead of percentage
+                showText: true,//show progress text or not
+                title: "1 minute continuous timer",//show header title for the progress bar
+            });
+            var sec = 1;
+            var timer = setInterval(function () {
+                $("#divProgress").circularloader({
+                    progressValue:sec,
+                    progressPercent: (sec/60*100)
+                });
+                sec++;
+				if(sec > 60)
+					sec = 1;
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
